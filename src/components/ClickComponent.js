@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
+import withCount from './withCount'
 
-export default function ClickComponent() {
-    const [count, setCount]=useState(0);
-    const handleClick=()=>{
-        setCount(count+1)
-    }
+ function ClickComponent({handleCount, count}) {
+    
   return (
-    <button onClick={handleClick}>Click Me {count}</button>
+    <button onClick={handleCount}>Click Me {count}</button>
   )
 }
+export default withCount(ClickComponent)

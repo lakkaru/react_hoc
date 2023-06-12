@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
+import handleCount from './withCount';
 
-export default function HoverComponent() {
-    const [count, setCount]=useState(0);
-    const handleCount= ()=>{
-        setCount(count +1)
-    }
+ function HoverComponent({handleCount, count}) {
+    
   return (
     <div style={{
         backgroundColor:'teal',
@@ -19,3 +17,4 @@ export default function HoverComponent() {
     }} onMouseOver={handleCount}>HoverComponent {count}</div>
   )
 }
+export default handleCount(HoverComponent)

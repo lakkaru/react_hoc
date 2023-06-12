@@ -8,9 +8,9 @@ import withNotes from './hocLearn/withNotes';
 function App() {
   return (
     <div className="App">
-      {/* <ClickComponent/><br/><br/>
-      <HoverComponent/> */}
-      <Student/>
+      <ClickComponent/><br/><br/>
+      <HoverComponent/>
+      {/* <Student/> */}
       
     </div>
   );
