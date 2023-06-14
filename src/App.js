@@ -2,16 +2,17 @@
 import './App.css';
 import ClickComponent from './components/ClickComponent';
 import HoverComponent from './components/HoverComponent';
-import Student from './hocLearn/Student';
-import withNotes from './hocLearn/withNotes';
+import SomeLayout from './componentsRP/SomeLayout';
+// import Student from './hocLearn/Student';
+// import withNotes from './hocLearn/withNotes';
 
 function App() {
   return (
     <div className="App">
-      <ClickComponent/><br/><br/>
-      <HoverComponent/>
+      {/* <ClickComponent/><br/><br/>
+      <HoverComponent/> */}
       {/* <Student/> */}
-      
+      <SomeLayout/>
     </div>
   );
 }

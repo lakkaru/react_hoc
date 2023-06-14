@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import handleCount from './withCount';
 
  function HoverComponent({handleCount, count}) {
